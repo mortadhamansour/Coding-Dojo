@@ -166,9 +166,11 @@ img{
 .more{
     color: #4b79aa;
     margin-top: 180px;
-    margin-left: 10px;
+    padding-left: 10px;
     text-decoration: underline;
     cursor: pointer;
+    border-top-style: solid;
+    border-top-color: #cecece;
 }
 .block2{
     margin-right: 200px;
