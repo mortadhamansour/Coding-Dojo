@@ -11,7 +11,7 @@ sports_directory = {
 z = [ {'x': 10, 'y': 20} ]
 
 # 1
-x[1][0] = 15 
+x[1][0] = 15
 print(x)
 # 2
 students[0]["last_name"] = "Bryant"
@@ -23,21 +23,44 @@ print(sports_directory)
 z[0]['y'] = 30
 
 # Iterate Through a List of Dictionaries
-students = [
-         {'first_name':  'Michael', 'last_name' : 'Jordan'},
-         {'first_name' : 'John', 'last_name' : 'Rosales'},
-         {'first_name' : 'Mark', 'last_name' : 'Guillen'},
-         {'first_name' : 'KB', 'last_name' : 'Tonel'}
-    ]
-iterateDictionary(students) 
-# should output: (it's okay if each key-value pair ends up on 2 separate lines;
-# bonus to get them to appear exactly as below!)
-first_name - Michael, last_name - Jordan
-first_name - John, last_name - Rosales
-first_name - Mark, last_name - Guillen
-first_name - KB, last_name - Tonel
-some_list = []
 def iterateDictionary(some_list):
-    for i in range(0, len(students), 1):
-        print(f"first name: {first_name}")
+    for student in some_list:
+        output_str = ""
+        for key, value in student.items():
+            output_str += f"{key} - {value}, "
+        print(output_str[:-2])
+
+students = [
+    {'first_name': 'Michael', 'last_name': 'Jordan'},
+    {'first_name': 'John', 'last_name': 'Rosales'},
+    {'first_name': 'Mark', 'last_name': 'Guillen'},
+    {'first_name': 'KB', 'last_name': 'Tonel'}
+]
+
 iterateDictionary(students)
+
+# Get Values From a List of Dictionaries
+def iterateDictionary2(key_name, some_list):
+    for dictionary in some_list:
+        print(dictionary[key_name])
+
+print("Output for 'first_name':")
+iterateDictionary2('first_name', students)
+
+print("\nOutput for 'last_name':")
+iterateDictionary2('last_name', students)
+
+# Iterate Through a Dictionary with List Values
+def printInfo(some_dict):
+    for key, values in some_dict.items():
+        print(f"{len(values)} {key.upper()}")
+        for value in values:
+            print(value)
+        print()
+
+dojo = {
+    'locations': ['San Jose', 'Seattle', 'Dallas', 'Chicago', 'Tulsa', 'DC', 'Burbank'],
+    'instructors': ['Michael', 'Amy', 'Eduardo', 'Josh', 'Graham', 'Patrick', 'Minh', 'Devon']
+}
+
+printInfo(dojo)
