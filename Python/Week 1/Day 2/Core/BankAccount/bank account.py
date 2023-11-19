@@ -25,6 +25,6 @@ class BankAccount:
         return self
     
 account1 = BankAccount(0.01, 500)
-account1.deposit(100).withdraw(50).yield_interest().display_account_info()
+account1.deposit(100).deposit(100).deposit(100).withdraw(50).yield_interest().display_account_info()
 account2 = BankAccount(0.01, 0)
-account2.deposit(1).withdraw(50).yield_interest().display_account_info()
+account2.deposit(1).deposit(100).withdraw(50).withdraw(50).withdraw(50).withdraw(50).yield_interest().display_account_info()
