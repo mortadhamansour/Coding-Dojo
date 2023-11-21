@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<style>
+    .bg{
+    background-color: #9fc5f8;
+    width: 200px; 
+    height: 200px; 
+    margin: 10px; 
+    border: solid 3px black;
+    background-color: {{color}};
+}
+</style>
+<body>
+    <h1 class="container">Welcome!</h1>
+    <div style="display: flex; justify-content: center; flex-wrap: wrap;">
+        {% for i in range (x): %}
+        <div class="bg"></div>
+        {% endfor %}
+    </div>
+</body>
+
+</html>
