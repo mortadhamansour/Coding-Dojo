@@ -1,0 +1,10 @@
+{
+    "cSpell.words": [
+        "mysqlconnection"
+    ],
+    "python.analysis.extraPaths": [
+        "./flask_app/controllers",
+        "./flask_app/models",
+        "./flask_app/config"
+    ]
+}

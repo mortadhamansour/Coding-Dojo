@@ -8,17 +8,16 @@
 </head>
 <body>
     <div class="container">
-        <h1>Counter</h1>
-        <p>{{ visit_count }} times.</p>
-        <div class="d-flex">
-            <form action="/">
-                <button type="submit" class="btn btn-info btn-outline-warning">Click</button>
-            </form>
-        
-            <form action="/destroy_session" method="POST">
-                <button type="submit" class="btn btn-danger btn-outline-success">Reset</button>
-            </form>
-        </div>
+        <h1>Welcome to the Great Number Game!</h1>
+        <h3>I am thinking of a number between 1 and 100</h3>
+        <h3>Take a guess</h3>
+            {% if message %}
+                <p>{{message}}</p>
+            {% endif %}
+    <form action="/" method="POST">
+        <input type="number" id="guess" name="guess" min="1" max="100" required>
+        <button type="submit">Submit</button>
+    </form>
     </div>
 </body>
 </html>
