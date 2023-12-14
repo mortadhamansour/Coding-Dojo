@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+</head>
+
+<body>
+    
+    <ul>
+        <li><strong>name:</strong> {{dojo.name}}</li>
+        
+
+        {% for one_ninja in dojo.all_dojos%}
+        <p>{{one_ninja.quote_body}}</p>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>
