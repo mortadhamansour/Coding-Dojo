@@ -6,14 +6,14 @@ class Ninja{
         this.strength = 3
     }
     sayName=()=>{
-        console.log(`${this.name}`);
+        console.log(`Name : ${this.name}`);
     }
     showStats=()=>{
-        console.log(`${this.name}, ${this.health}, ${this.speed}, ${this.strength}`);
+        console.log(`Name : ${this.name}, Health : ${this.health}, Speed : ${this.speed}, Strength : ${this.strength}`);
     }
     drinkSake=()=>{
         this.health += 10;
-        console.log(`${this.health}`);
+        console.log(`Health : ${this.health}`);
     }
 }
 
