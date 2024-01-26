@@ -16,13 +16,13 @@ public class CafeUtil {
     }
     public void displayMenu(ArrayList<String> menuItems){
         for (int i = 0; i < menuItems.size(); i++){
-            System.out.println(i  +  menuItems.get(i));
+            System.out.printf(i  +  menuItems.get(i));
         }
     }
     public void addCustomer(ArrayList<String> customers){
         System.out.println("Please enter your name:");
         String username = System.console().readLine();
-        System.out.println("Hello " + username + " There are "+ customers.size() + " people in front of you");
+        System.out.printf("Hello " + username + " There are "+ customers.size() + " people in front of you");
         System.out.println(customers);
         customers.add(username);
     }
