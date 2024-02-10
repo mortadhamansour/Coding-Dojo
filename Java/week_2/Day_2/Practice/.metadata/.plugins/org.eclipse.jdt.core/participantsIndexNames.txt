@@ -1,0 +1,3 @@
+INDEX VERSION 1.134
+C:\Users\Asus\Desktop\Coding Dojo\Java\week_2\Day_2\Practice\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3507765393.index
+\LoginRegistration\src\main\java
